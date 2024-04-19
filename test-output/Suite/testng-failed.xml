@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test01(failed)">
+    <parameter name="password" value="admin"/>
+    <parameter name="browser" value="edge"/>
+    <parameter name="url" value="https://demo.vtiger.com/vtigercrm/"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="learntestng.ReadTheDataFromXmlFile">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- learntestng.ReadTheDataFromXmlFile -->
+    </classes>
+  </test> <!-- Test01(failed) -->
+  <test thread-count="5" parallel="tests" name="Test02(failed)">
+    <parameter name="password" value="admin"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://demo.vtiger.com/vtigercrm/"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="learntestng.ReadTheDataFromXmlFile">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- learntestng.ReadTheDataFromXmlFile -->
+    </classes>
+  </test> <!-- Test02(failed) -->
+</suite> <!-- Failed suite [Suite] -->
